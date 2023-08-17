@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calculadora de Notas</title>
+</head>
+<body>
+
+<header id="header">
+    <h1>Calculadora de Notas</h1>
+</header> 
+<div class="gigante">
+    <main id="main">
+        <form id="formulario">
+            <label for="nombreEstudiante">Nombre del Estudiante:</label>
+            <input class="nombre-cajita" type="text" id="nombreEstudiante" required>
+  
+            <label for="notaEstudiante">Nota del Estudiante:</label>
+            <input class="nota-cajita" type="number" id="notaEstudiante" min="0" max="10" required>
+  
+            <button id="agregarEstudiante">Agregar Estudiante</button>
+        </form>
+        <div class="div-estudiantes">
+            <h2>Estudiantes Ingresados:</h2>
+            <button id="calcularResultados">Calcular Resultados</button>
+            <button id="limpiarLista">Limpiar Lista</button>
+            <button id="eliminarUltimoEstudiante">Eliminar Último Estudiante</button>
+
+            <div class="listaEstudiantes">
+                <ol id="estudiantesIngresados"></ol>
+            </div>
+        </div>
+
+        <div id="resultados"></div>
+
+        <div id="errorDiv"></div> 
+
+    </main>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
